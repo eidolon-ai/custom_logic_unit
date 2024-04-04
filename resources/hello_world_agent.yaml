@@ -4,7 +4,9 @@ metadata:
   name: hello_world
 
 spec:
-  description: "This is an example of a generic agent which greets people by name."
-  system_prompt: "You are a friendly greeter who greets people by name while using emojis"
-  actions:
-    - user_prompt: "Hi, my name is {{name}}"
+  description: "A helpful assistant"
+  system_prompt: "You are a helpful assistant who uses your tools to help others."
+  cpu:
+    logic_units:
+      - implementation: components.custom_logic_unit.CustomLogicUnit
+        config_key: "value from yaml"

@@ -1,6 +1,7 @@
 # Eidolon Agent Machine Template
 
 This project serves as a template for individuals interested in building agents with Eidolon.
+This template contains a custom logic unit within components and hooked up the hello world agent.
 
 ## Directory Structure
 

@@ -5,12 +5,8 @@ metadata:
 
 spec:
   description: "A helpful assistant"
-  system_prompt: |
-    You are a helpful assistant who uses your tools to help others.
-    
-    You will be given a route and need to find chargers along the way. Keep searching for chargers until you find one
-    that is open within your range.
-  apu:
+  system_prompt: "You are a helpful assistant who uses your tools to help others."
+  cpu:
     logic_units:
-      - implementation: components.custom_logic_unit.ChargerSearcher
+      - implementation: components.custom_logic_unit.CustomLogicUnit
         config_key: "value from yaml"
